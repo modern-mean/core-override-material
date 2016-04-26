@@ -3,13 +3,16 @@
 
   // Setting HTML5 Location Mode
   angular
-    .module('site.routes')
-    .run(coreMenu);
+    .module('override.routes')
+    .run(overrideMenu);
 
-  coreMenu.$inject = ['$state'];
-  function coreMenu($state) {
+  overrideMenu.$inject = ['$state'];
+  function overrideMenu($state) {
     var rootState = $state.get('root');
-    rootState.views.leftnav.templateUrl = 'modules/site/client/views/site.client.view.nav.left.html';
-    rootState.views.header.templateUrl = 'modules/site/client/views/site.client.view.header.html';
+    rootState.views.leftnav.templateUrl = 'core-override-material/views/site.client.view.nav.left.html';
+
+    //Override Header
+    rootState.views.header.templateUrl = 'core-override-manterial/views/site.client.view.header.html';
+    rootState.views.header.controller = 'OverrideHeaderController';
   }
 })();
