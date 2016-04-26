@@ -43,7 +43,7 @@ templates.displayName = 'templates';
 gulp.task(templates);
 
 function client() {
-  return gulp.src(['./client/**/*.module.js', './client/**/(!*module).js'])
+  return gulp.src(['./client/**/*.module.js', './client/**/!(*module).js'])
     .pipe(concat('application.js'))
     .pipe(gulp.dest('./dist/client'));
 }
