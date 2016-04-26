@@ -18,7 +18,7 @@
   function OverrideHeaderController($mdComponentRegistry, $log) {
     var vm = this;
 
-    vm.name = 'Override Core!!!'
+    vm.name = 'Override Core!!!';
     vm.navigation = {};
 
     $mdComponentRegistry
