@@ -1,4 +1,6 @@
-# site
+[![Build Status](https://travis-ci.org/modern-mean/core-override-material.svg?branch=master)](https://travis-ci.org/modern-mean/core-override-material)
+
+#modern-mean-core-override-material
 Module to demonstrate overriding the core.  This module demonstrates how to override the header and side navigation in your own module so you don't have to modify the core.
 
 ## Installation
