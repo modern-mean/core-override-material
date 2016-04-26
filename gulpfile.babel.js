@@ -34,7 +34,7 @@ lint.displayName = 'lint';
 function templates() {
   return gulp.src(['./client/**/*.html'])
     .pipe(templateCache({
-      root: 'core-override-material',
+      root: 'modern-mean-core-override-material',
       module: 'override'
     }))
     .pipe(gulp.dest('./dist/client'));
