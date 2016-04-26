@@ -30,7 +30,6 @@
     "browserify": "^13.0.0",
     "chai": "~3.5.0",
     "chai-as-promised": "~5.3.0",
-    "chai-spies": "~0.7.1",
     "coveralls": "~2.11.6",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-angular-templatecache": "~1.8.0",
