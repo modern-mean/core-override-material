@@ -15,6 +15,7 @@ module.exports = function (karmaConfig) {
   karmaFiles.push('../node_modules/modern-mean-core-material/dist/client/application.js');
   karmaFiles.push('../node_modules/modern-mean-core-material/dist/client/templates.js');
   karmaFiles = lodash.union(karmaFiles, ['../client/**/*.module.js', '../client/**/!(*module).js', '../tests/client/**/*.js']);
+  karmaFiles.push('../dist/client/vendor.js');
   karmaFiles.push('../dist/client/templates.js');
 
 

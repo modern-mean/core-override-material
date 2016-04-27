@@ -1,7 +1,7 @@
 (function(app) {
   'use strict';
 
-  app.registerModule('override', ['core']);
+  app.registerModule('override', ['core', 'angularMoment']);
   app.registerModule('override.routes', ['core.routes']);
 
 })(window.modernMeanApplication);
@@ -37,6 +37,25 @@
   }
 })();
 
+(function () {
+  'use strict';
+
+  angular
+    .module('override')
+    .controller('OverrideHomeController', OverrideHomeController);
+
+  OverrideHomeController.$inject = ['$log', 'moment'];
+
+  function OverrideHomeController($log) {
+    var vm = this;
+
+    vm.days = moment().daysInMonth();
+
+
+    $log.info('OverrideHomeController::Init', vm);
+  }
+})();
+
 (function() {
   'use strict';
 
@@ -53,6 +72,11 @@
     rootState.views.header.templateUrl = 'modern-mean-core-override-material/views/override.client.view.header.html';
     rootState.views.header.controller = 'OverrideHeaderController';
 
-    $log.info('Override::navigationConfig::Init', rootState);
+    var homeState = $state.get('root.home');
+    //Override Header
+    homeState.views['main@'].templateUrl = 'modern-mean-core-override-material/views/override.client.view.home.html';
+    homeState.views['main@'].controller = 'OverrideHomeController';
+
+    $log.info('Override::navigationConfig::Inita', rootState);
   }
 })();

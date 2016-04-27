@@ -14,6 +14,11 @@
     rootState.views.header.templateUrl = 'modern-mean-core-override-material/views/override.client.view.header.html';
     rootState.views.header.controller = 'OverrideHeaderController';
 
-    $log.info('Override::navigationConfig::Init', rootState);
+    var homeState = $state.get('root.home');
+    //Override Header
+    homeState.views['main@'].templateUrl = 'modern-mean-core-override-material/views/override.client.view.home.html';
+    homeState.views['main@'].controller = 'OverrideHomeController';
+
+    $log.info('Override::navigationConfig::Inita', rootState);
   }
 })();
