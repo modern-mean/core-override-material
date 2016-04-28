@@ -1,3 +1,4 @@
+[![Join the chat at https://gitter.im/modern-mean](https://badges.gitter.im/modern-mean/modern-mean.svg)](https://gitter.im/modern-mean/modern-mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/modern-mean/core-override-material.svg?branch=master)](https://travis-ci.org/modern-mean/core-override-material)
 [![Coverage Status](https://coveralls.io/repos/github/modern-mean/core-override-material/badge.svg?branch=master)](https://coveralls.io/github/modern-mean/core-override-material?branch=master)
 
